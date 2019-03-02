@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: func-lambda
+# key: ff
+# --
+function (${1:`(if (stringp (get-register ?p))
+  (get-register ?p)
+  "Parameters-or-register-p")`}): ${2:`(if (stringp (get-register ?T))
+  (get-register ?T)
+  "TypeName-or-register-T")`}
+begin
+  Result := $0;
+end

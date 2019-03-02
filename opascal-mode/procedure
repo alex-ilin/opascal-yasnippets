@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: procedure
+# key: p
+# --
+procedure ${1:`(if (stringp (get-register ?i))
+  (get-register ?i)
+  "Identifier-or-register-i")`}(${2:`(if (stringp (get-register ?p))
+  (get-register ?p)
+  "Parameters-or-register-p")`});
+
+begin
+  $0;
+end;

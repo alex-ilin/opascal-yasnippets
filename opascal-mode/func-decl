@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: func-declaration
+# key: fd
+# --
+function ${1:`(if (stringp (get-register ?i))
+  (get-register ?i)
+  "Identifier-or-register-i")`}(${2:`(if (stringp (get-register ?p))
+  (get-register ?p)
+  "Parameters-or-register-p")`}): ${3:`(if (stringp (get-register ?T))
+  (get-register ?T)
+  "TypeName-or-register-T")`};

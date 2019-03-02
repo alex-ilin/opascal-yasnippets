@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: linear-search
+# key: ls
+# --
+i := 0;
+c := ${1:Count};
+while (i < c) and not (${2:search condition}) do
+begin
+  $0
+  Inc(i);
+end;
+Result := i < c;
+if Result then
+begin // $2
+end;

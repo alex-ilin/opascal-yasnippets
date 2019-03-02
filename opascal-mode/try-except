@@ -1,0 +1,11 @@
+# key: te
+# name: try-except
+# --
+try
+  $0
+except
+  on E: ${1:Exception} do
+  begin
+    ${2:Set_ErrorMsg(Format('Exception %s, Message: %s', [E.ClassName, E.Message]));}
+  end;
+end;

@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: class-declaration
+# key: t
+# --
+${1:`(if (stringp (get-register ?t))
+  (get-register ?t)
+  "TypeName-or-register-t")`} = class(${1:`(if (stringp (get-register ?T))
+  (get-register ?T)
+  "TObject")`})
+strict private
+  $0
+
+public
+  constructor Create;
+  destructor Destroy; override;
+
+end;

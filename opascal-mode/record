@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: record-declaration
+# key: T
+# --
+T${1:RecordType} = record
+  $0
+end;

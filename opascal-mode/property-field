@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: property-field
+# key: pf
+# --
+property ${1:`(if (stringp (get-register ?i))
+  (get-register ?i)
+  "Identifier-or-register-i")`}: ${2:`(if (stringp (get-register ?t))
+  (get-register ?t)
+  "TypeName-or-register-t")`} read F$1;

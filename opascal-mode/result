@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: result-assignment
+# key: r
+# --
+Result := $0;

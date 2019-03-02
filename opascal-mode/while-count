@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: while-count
+# key: wc
+# --
+i := 0;
+c := Count;
+while i < c do
+begin
+  $0
+  Inc(i);
+end;

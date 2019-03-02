@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: proc-lambda
+# key: pp
+# --
+procedure (${1:`(if (stringp (get-register ?p))
+  (get-register ?p)
+  "Parameters-or-register-p")`})
+
+begin
+  $0;
+end

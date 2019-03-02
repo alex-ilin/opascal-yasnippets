@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: property-getter
+# key: pg
+# --
+property ${1:`(if (stringp (get-register ?i))
+  (get-register ?i)
+  "Identifier-or-register-i")`}: ${2:`(if (stringp (get-register ?t))
+  (get-register ?t)
+  "TypeName-or-register-t")`} read Get$1;

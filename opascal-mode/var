@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: var
+# key: var
+# --
+var
+  ${1:i}: ${2:Integer};
+  $0
