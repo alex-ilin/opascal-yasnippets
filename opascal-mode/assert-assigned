@@ -1,0 +1,5 @@
+# key: aa
+# name: assert-assigned
+# --
+Assert(Assigned($1));
+$>$0
